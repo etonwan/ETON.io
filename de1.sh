@@ -20,5 +20,10 @@ git config core.sparsecheckout true
 echo "/de1" >> .git/info/sparse-checkout
 #拉取
 git pull origin main
+#拉出到上一级
+cd /etc/soga/de1
+mv ./* ../
+rm -rf /etc/soga/de1
 #启动soga
+cd /etc/soga
 docker-compose up -d
