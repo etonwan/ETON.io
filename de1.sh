@@ -1,13 +1,13 @@
 #更新
 apt-get update && apt-get -y upgrade
-#安装ehco
-apt install ehco
+#安装echo
+apt install echo
 #安装git
 apt install git
 #安装docker
 curl -fsSL https://get.docker.com | bash -s docker
 #安装docker-compose
-ehco y | apt install docker-compose
+echo y | apt install docker-compose
 #解决docker-compose报错
 sudo apt-get install apparmor
 service docker restart
