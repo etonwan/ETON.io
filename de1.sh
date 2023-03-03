@@ -1,14 +1,14 @@
 #更新
 apt-get update && apt-get -y upgrade
-#安装git
-apt install git
 #安装docker
 curl -fsSL https://get.docker.com | bash -s docker
 #安装docker-compose
 echo y | apt install docker-compose
 #解决docker-compose报错
-sudo apt-get install apparmor
+echo y | apt install apparmor
 service docker restart
+#安装git
+echo y | apt install git
 #新建soga挂载文件夹
 cd /etc
 mkdir soga
