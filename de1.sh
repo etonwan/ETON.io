@@ -1,5 +1,9 @@
 #更新
 apt-get update && apt-get -y upgrade
+#安装ehco
+apt install ehco
+#安装git
+apt install git
 #安装docker
 curl -fsSL https://get.docker.com | bash -s docker
 #安装docker-compose
