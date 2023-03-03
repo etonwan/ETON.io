@@ -5,7 +5,7 @@ curl -fsSL https://get.docker.com | bash -s docker
 #安装docker-compose
 echo y | apt install docker-compose
 #解决docker-compose报错
-echo y | apt install apparmor
+echo y | sudo apt-get install apparmor
 service docker restart
 #安装git
 echo y | apt install git
