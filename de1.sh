@@ -1,7 +1,5 @@
 #更新
 apt-get update && apt-get -y upgrade
-#安装echo
-apt install echo
 #安装git
 apt install git
 #安装docker
