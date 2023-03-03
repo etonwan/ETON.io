@@ -4,9 +4,6 @@ apt-get update && apt-get -y upgrade
 curl -fsSL https://get.docker.com | bash -s docker
 #安装docker-compose
 echo y | apt install docker-compose
-#解决docker-compose报错
-echo y | sudo apt-get install apparmor
-service docker restart
 #安装git
 echo y | apt install git
 #新建soga挂载文件夹
@@ -26,6 +23,9 @@ git pull origin main
 cd /etc/soga/de1
 mv ./* ../
 rm -rf /etc/soga/de1
-#启动soga
 cd /etc/soga
+#解决docker-compose报错
+echo y | sudo apt-get install apparmor
+service docker restart
+#启动soga
 docker-compose up -d
