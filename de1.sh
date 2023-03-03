@@ -23,9 +23,3 @@ git pull origin main
 cd /etc/soga/de1
 mv ./* ../
 rm -rf /etc/soga/de1
-cd /etc/soga
-#解决docker-compose报错
-sudo apt-get install apparmor
-service docker restart
-#启动soga
-docker-compose up -d
