@@ -592,6 +592,9 @@ nf520hk.eton.club:
    - domain:zdf.de
    - domain:zdf-hls-15.akamaized.net
    - domain:#OPENAI
-   - domain:openai.com
-   - domain:chat.openai.com
+   - domain:platform.openai.com
+   - domain:beta.openai.com
    - domain:auth0.openai.com
+   - domain:auth1.openai.com
+   - domain:auth2.openai.com
+   - domain:chat.openai.com
