@@ -26,11 +26,12 @@ services:
       forbidden_ports: 22,3389
     volumes:
       - "/etc/soga/:/etc/soga/"
+      
   soga_iplc:
     image: vaxilu/soga:latest
     restart: on-failure
     network_mode: host
-    container_name: soga_tnl
+    container_name: soga_iplc
     environment:
       type: v2board
       server_type: ss
