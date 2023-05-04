@@ -21,7 +21,6 @@ services:
       force_close_ssl: 'false'
       forbidden_bit_torrent: 'true'
       log_level: debug
-      log_file: /etc/soga/soga_tnl.log
       tfo: 'true'
       forbidden_ports: 22,3389
     volumes:
