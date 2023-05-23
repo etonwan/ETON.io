@@ -26,15 +26,15 @@ services:
     volumes:
       - "/etc/soga/:/etc/soga/"
 
-  soga_udpn:
+  soga_iplc:
     image: vaxilu/soga:latest
     restart: on-failure
     network_mode: host
-    container_name: soga_udpn
+    container_name: soga_iplc
     environment:
       type: v2board
       server_type: ss
-      node_id: 521
+      node_id: 515
       soga_key: A8DVWC16ayRIJV5aDwznkVzYftrFVeKU
       api: webapi
       webapi_url: https://www.eton.club/
@@ -52,15 +52,15 @@ services:
     volumes:
       - "/etc/soga/:/etc/soga/"
 
-  soga_iplc:
+  soga_udpn:
     image: vaxilu/soga:latest
     restart: on-failure
     network_mode: host
-    container_name: soga_iplc
+    container_name: soga_udpn
     environment:
       type: v2board
       server_type: ss
-      node_id: 515
+      node_id: 521
       soga_key: A8DVWC16ayRIJV5aDwznkVzYftrFVeKU
       api: webapi
       webapi_url: https://www.eton.club/
