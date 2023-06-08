@@ -16,10 +16,10 @@ git init
 git remote add -f origin https://github.com/etonwan/ETON.io.git
 #sparsecheckout
 git config core.sparsecheckout true
-echo "/fr1" >> .git/info/sparse-checkout
+echo "/kr1" >> .git/info/sparse-checkout
 #拉取
 git pull origin main
 #拉出到上一级
-cd /etc/soga/fr1
+cd /etc/soga/kr1
 mv ./* ../
-rm -rf /etc/soga/fr1
+rm -rf /etc/soga/kr1
