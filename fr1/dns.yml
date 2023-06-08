@@ -1,5 +1,5 @@
 # dns配置，具体请参考文档：https://doc.sprov.xyz/other-tutorial/dns-config
-nf520fr.eton.club:
+nf520kr.eton.club:
    - domain:#NETFLIX
    - domain:fast.com
    - domain:netflix.ca
